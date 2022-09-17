@@ -533,3 +533,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea3349965aa529a4185efaf0f08c9581, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyObject: {fileID: 6783737954188933637, guid: a0624ec1f9d68d34f8af8cb4bfd34f7f, type: 3}
