@@ -133,7 +133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   explosionParticle: {fileID: 0}
-  moveSpeed: 0.15
+  moveSpeed: 0.01
   bulletDamage: 1
 --- !u!50 &-3670901775565398719
 Rigidbody2D:

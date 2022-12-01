@@ -29,10 +29,30 @@ public class player : MonoBehaviour
         if(Input.GetMouseButton(1)){
             OnRotationAndMove();
         }
-        if(Input.GetMouseButtonDown(0)){
+        if(Input.GetMouseButton(0)){
             Fire();
         }
         Reload();
+        overLine();
+    }
+
+    /*
+    플레이어가 화면밖을 나갔는지 검사하는 함수
+    나가면 반대편으로 이동
+    */
+    void overLine(){
+        if (transform.position.x < -35){
+            transform.position = new Vector3(35, transform.position.y, 0);
+        }
+        else if (transform.position.x > 35){
+            transform.position = new Vector3(-35, transform.position.y, 0);
+        }
+        if (transform.position.y < -18){
+            transform.position = new Vector3(transform.position.x, 18, 0);
+        }
+        else if (transform.position.y > 18){
+            transform.position = new Vector3(transform.position.x, -18, 0);
+        }
     }
 
     void Reload(){
